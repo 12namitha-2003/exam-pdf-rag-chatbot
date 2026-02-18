@@ -1,6 +1,6 @@
 # exam-pdf-rag-chatbot
 
- Features
+ Features:
 
  Upload study PDFs
 
@@ -15,7 +15,7 @@
  Lightweight and CPU-compatible setup
 
 
-Core Technologies Used
+Core Technologies Used:
 
 Frontend: Streamlit
 
@@ -32,7 +32,7 @@ Frameworks: Hugging Face Transformers
 Acceleration Support: Accelerate, BitsAndBytes
 
 
-Architecture Overview
+Architecture Overview:
 
 PDF is uploaded
 
@@ -48,7 +48,7 @@ FLAN-T5 generates a structured exam-style answer
 
 
 
-Target Output Format (Under Improvement)
+Target Output Format (Under Improvement):
 
 The goal of this project is to generate detailed, structured university exam answers in the following format:
 
