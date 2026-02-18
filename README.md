@@ -1,21 +1,19 @@
-# exam-pdf-rag-chatbot
+🚀 Features
 
- Features:
+Upload study PDFs
 
- Upload study PDFs
+Context-aware question answering
 
- Context-aware question answering
+Retrieval-Augmented Generation (RAG) architecture
 
- Retrieval-Augmented Generation (RAG) architecture
+Exam-oriented structured answers (14-mark style – in progress)
 
- Structured 14-mark style exam answers
+Conversational chat interface using Streamlit
 
- Conversational chat interface (Streamlit)
-
- Lightweight and CPU-compatible setup
+Lightweight and CPU-compatible setup
 
 
-Core Technologies Used:
+🧠 Core Technologies Used
 
 Frontend: Streamlit
 
@@ -23,32 +21,31 @@ Embedding Model: sentence-transformers/all-MiniLM-L6-v2
 
 Vector Database: FAISS (IndexFlatL2)
 
-LLM (Answer Generation Model): google/flan-t5-base
+Answer Generation Model (LLM): google/flan-t5-base
 
 PDF Processing: PyPDF
 
-Frameworks: Hugging Face Transformers
+Framework: Hugging Face Transformers
 
 Acceleration Support: Accelerate, BitsAndBytes
 
 
-Architecture Overview:
+🏗 Architecture Overview
 
-PDF is uploaded
+PDF upload and text extraction
 
-Text is extracted and chunked
+Text chunking for semantic indexing
 
-Chunks are converted into embeddings
+Embedding generation using Sentence Transformers
 
-FAISS builds a vector index
+FAISS-based similarity search
 
-Relevant context is retrieved based on user question
+Context retrieval
 
-FLAN-T5 generates a structured exam-style answer
+Answer generation using FLAN-T5
 
 
-
-Target Output Format (Under Improvement):
+🎯 Target Output Format (Under Improvement)
 
 The goal of this project is to generate detailed, structured university exam answers in the following format:
 
@@ -65,3 +62,5 @@ Advantages / Disadvantages
 Applications
 
 Conclusion
+
+
