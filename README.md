@@ -1,67 +1,172 @@
-🚀 Features
+# Exam PDF RAG Chatbot
 
-Upload study PDFs
+## Project Overview
+- This project is a PDF-based RAG (Retrieval-Augmented Generation) chatbot.
+- Users can upload exam-related PDF documents and ask questions from the uploaded content.
+- The chatbot retrieves relevant information from the PDF and generates answers using AI models.
 
-Context-aware question answering
+---
 
-Retrieval-Augmented Generation (RAG) architecture
+## Features
+- Upload PDF documents
+- Extract text from PDFs
+- Ask questions from uploaded PDFs
+- AI-powered answer generation
+- Context-based response generation
+- Simple user interface using Streamlit
+- Fast document search using vector embeddings
 
-Exam-oriented structured answers (14-mark style – in progress)
+---
 
-Conversational chat interface using Streamlit
+## Technologies Used
+- Python
+- Streamlit
+- LangChain
+- NLP (Natural Language Processing)
+- Vector Database
+- Embedding Models
+- FAISS / ChromaDB
+- OpenAI / Gemini API
+- PyPDF
 
-Lightweight and CPU-compatible setup
+---
+
+## Project Structure
+
+```text
+exam-pdf-rag-chatbot/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── data/
+├── pdfs/
+└── vector_store/
+```
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/12namitha-2003/exam-pdf-rag-chatbot.git
+```
+
+---
+
+### Move to Project Folder
+
+```bash
+cd exam-pdf-rag-chatbot
+```
+
+---
+
+### Create Virtual Environment
+
+```bash
+py -3.10 -m venv venv
+```
+
+---
+
+### Activate Virtual Environment
+
+```bash
+venv\Scripts\activate
+```
+
+---
+
+### Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run the Project
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## How the System Works
+1. User uploads PDF document
+2. Text is extracted from PDF
+3. Text is split into smaller chunks
+4. Embeddings are created
+5. Embeddings are stored in vector database
+6. User asks question
+7. Relevant chunks are retrieved
+8. AI model generates contextual answer
+
+---
+
+## NLP Concepts Used
+- Text preprocessing
+- Tokenization
+- Semantic search
+- Embeddings
+- Context retrieval
+- Question answering
+- Language generation
+- Information retrieval
+
+---
+
+## Advantages
+- Faster information retrieval from large PDFs
+- Reduces manual searching effort
+- Context-aware responses
+- Interactive chatbot interface
+- Useful for exam preparation and document analysis
+
+---
+
+## Constraints / Limitations
+- Slow answer generation for large PDF files
+- Accuracy depends on quality of uploaded PDF
+- Requires internet connection for API-based models
+- Large documents may increase processing time
+- Limited understanding of complex diagrams/tables
+- High memory usage for large vector databases
+- Responses may vary depending on embedding quality
+
+---
+
+## Future Scope
+- Add multilingual NLP support
+- Improve response generation speed
+- Integrate voice-based question answering
+- Add OCR support for scanned PDFs
+- Improve semantic understanding using advanced NLP models
+- Add summarization feature
+- Add chatbot memory for conversation history
+- Deploy as cloud-based web application
+- Integrate advanced LLMs for better contextual answers
+- Add support for multiple PDF uploads
+- Improve document ranking and retrieval accuracy
+
+---
+
+## Applications
+- Exam preparation systems
+- Academic document analysis
+- Research paper assistance
+- Question-answering systems
+- Smart educational assistants
+
+---
 
 
-🧠 Core Technologies Used
-
-Frontend: Streamlit
-
-Embedding Model: sentence-transformers/all-MiniLM-L6-v2
-
-Vector Database: FAISS (IndexFlatL2)
-
-Answer Generation Model (LLM): google/flan-t5-base
-
-PDF Processing: PyPDF
-
-Framework: Hugging Face Transformers
-
-Acceleration Support: Accelerate, BitsAndBytes
+https://github.com/user-attachments/assets/c3e6008e-3c8e-49df-b5d3-65277fab4310
 
 
-🏗 Architecture Overview
-
-PDF upload and text extraction
-
-Text chunking for semantic indexing
-
-Embedding generation using Sentence Transformers
-
-FAISS-based similarity search
-
-Context retrieval
-
-Answer generation using FLAN-T5
-
-
-🎯 Target Output Format (Under Improvement)
-
-The goal of this project is to generate detailed, structured university exam answers in the following format:
-
-Title
-
-Introduction
-
-Detailed Explanation
-
-Key Points
-
-Advantages / Disadvantages
-
-Applications
-Screen Recording 2026-02-18 075517.mp4
-
-Conclusion
-
-
+## Author
+Namitha A Suresh
